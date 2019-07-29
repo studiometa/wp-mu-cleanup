@@ -52,8 +52,7 @@ require plugin_dir_path( __FILE__ ) . 'src/class-cleanup.php';
  */
 function run_wp_mu_cleanup() {
 
-	$plugin = new \Studiometa\WP\Cleanup();
-	$plugin->run();
+	new \Studiometa\WP\Cleanup();
 
 }
 run_wp_mu_cleanup();
